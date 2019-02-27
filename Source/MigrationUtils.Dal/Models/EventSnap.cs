@@ -26,6 +26,6 @@ namespace MigrationUtils.Dal.Models
         public bool IsTemplate { get; set; }
         public string Name { get; set; }
         public string Designation { get; set; }
-        public string Identifier { get; set; 
+        public string Identifier { get; set; }
     }
 }

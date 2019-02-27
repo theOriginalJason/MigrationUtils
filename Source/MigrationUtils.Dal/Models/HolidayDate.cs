@@ -1,5 +1,4 @@
 using System;
-using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace MigrationUtils.Dal.Models
@@ -11,6 +10,6 @@ namespace MigrationUtils.Dal.Models
         [Column("HolidayDate", TypeName = "date")]
         public DateTime HolidayDate1 { get; set; }
 
-        [Required] [StringLength(50)] public string Name { get; set; }
+        public string Name { get; set; }
     }
 }

@@ -2,7 +2,7 @@ using System;
 
 namespace MigrationUtils.Dal.Models
 {
-    public class CriticalMilestoneSnap
+    public class CriticalMilestoneSnap: Audit
     {
         public int SnapId { get; set; }
         public int CriticalMilestoneId { get; set; }
@@ -14,14 +14,6 @@ namespace MigrationUtils.Dal.Models
         public int ProjectId { get; set; }
 
         public string Progression { get; set; }
-
-        public DateTimeOffset CreatedDate { get; set; }
-
-        public DateTimeOffset? UpdatedDate { get; set; }
-
-        public string CreatedBy { get; set; }
-
-        public string UpdatedBy { get; set; }
 
         public bool IsDeleted { get; set; }
 

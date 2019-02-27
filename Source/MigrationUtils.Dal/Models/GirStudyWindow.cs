@@ -1,7 +1,7 @@
 using System;
 namespace MigrationUtils.Dal.Models
 {
-    public class GirStudyWindow
+    public class GirStudyWindow : Audit
     {
         public int GirStudyWindowId { get; set; }
 
@@ -18,14 +18,6 @@ namespace MigrationUtils.Dal.Models
         public int TransmissionEntityId { get; set; }
 
         public DateTimeOffset? ActualStudyCompletionDate{ get; set; }
-
-        public DateTimeOffset CreatedDate { get; set; }
-
-        public DateTimeOffset? UpdatedDate { get; set; }
-
-        public string CreatedBy { get; set; }
-
-        public string UpdatedBy { get; set; }
 
         public bool IsDeleted { get; set; }
     }

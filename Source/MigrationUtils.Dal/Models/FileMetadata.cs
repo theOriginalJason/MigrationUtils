@@ -1,5 +1,4 @@
 using System;
-using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace MigrationUtils.Dal.Models
@@ -9,24 +8,24 @@ namespace MigrationUtils.Dal.Models
     {
         public int FileMetadataId { get; set; }
 
-        [Required] [StringLength(100)] public string SubjectType { get; set; }
+        public string SubjectType { get; set; }
 
-        [Required] [StringLength(200)] public string SubjectId { get; set; }
+        public string SubjectId { get; set; }
 
-        [Required] [StringLength(1000)] public string PrefixedFileName { get; set; }
+        public string PrefixedFileName { get; set; }
 
-        [Required] [StringLength(1000)] public string FileName { get; set; }
+        public string FileName { get; set; }
 
-        [StringLength(1000)] public string Title { get; set; }
+        public string Title { get; set; }
 
-        [Required] [StringLength(200)] public string Submitter { get; set; }
+        public string Submitter { get; set; }
 
-        [Required] [StringLength(200)] public string CreatedBy { get; set; }
+        public string CreatedBy { get; set; }
 
-        [Column(TypeName = "datetime2")] public DateTime CreatedOn { get; set; }
+        public DateTime CreatedOn { get; set; }
 
-        [Required] [StringLength(200)] public string UpdatedBy { get; set; }
+        public string UpdatedBy { get; set; }
 
-        [Column(TypeName = "datetime2")] public DateTime UpdatedOn { get; set; }
+        public DateTime UpdatedOn { get; set; }
     }
 }
