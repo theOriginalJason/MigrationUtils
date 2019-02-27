@@ -1,7 +1,4 @@
 using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Diagnostics.CodeAnalysis;
 
 namespace MigrationUtils.Dal.Models
 {
@@ -18,6 +15,5 @@ namespace MigrationUtils.Dal.Models
         public string FirstDueDateRule { get; set; }
 
         public DateTimeOffset? StateDeterminedDueDate { get; set; }
-
     }
 }
