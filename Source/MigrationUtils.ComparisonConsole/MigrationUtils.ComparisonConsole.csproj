@@ -4,16 +4,17 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{37505733-853E-495A-B6C8-111AAD988D03}</ProjectGuid>
-    <OutputType>Library</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MigrationUtils.Bll</RootNamespace>
-    <AssemblyName>MigrationUtils.Bll</AssemblyName>
+    <ProjectGuid>{E8F731A7-00C4-4761-82D5-4CEA82727B08}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>MigrationUtils.ComparisonConsole</RootNamespace>
+    <AssemblyName>MigrationUtils.ComparisonConsole</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -23,6 +24,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -31,9 +33,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>..\packages\Newtonsoft.Json.12.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
@@ -45,26 +44,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Services\ComparisonUtil.cs" />
-    <Compile Include="Services\EntitySetUtil.cs" />
-    <Compile Include="Services\JsonFileUtil.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MigrationUtils.Bll\MigrationUtils.Bll.csproj">
+      <Project>{37505733-853e-495a-b6c8-111aad988d03}</Project>
+      <Name>MigrationUtils.Bll</Name>
+    </ProjectReference>
     <ProjectReference Include="..\MigrationUtils.Dal\MigrationUtils.Dal.csproj">
-      <Project>{BA44E9D1-0D5C-40FD-A205-300E74470957}</Project>
+      <Project>{ba44e9d1-0d5c-40fd-a205-300e74470957}</Project>
       <Name>MigrationUtils.Dal</Name>
     </ProjectReference>
-    <ProjectReference Include="..\MIgrationUtils.Test\MigrationUtils.Test.csproj">
-      <Project>{b52a7191-d0aa-49f5-a1cc-b6e7ef0ad975}</Project>
-      <Name>MigrationUtils.Test</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Tests\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
