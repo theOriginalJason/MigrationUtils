@@ -1,5 +1,3 @@
-using System.ComponentModel.DataAnnotations;
-
 namespace MigrationUtils.Dal.Models
 {
     public class SubEventScenarioConnection
@@ -10,7 +8,7 @@ namespace MigrationUtils.Dal.Models
 
         public int ChildSubEventScenarioId { get; set; }
 
-        [Required] [StringLength(50)] public string Name { get; set; }
+        public string Name { get; set; }
 
         public bool IsDeleted { get; set; }
 
@@ -18,16 +16,10 @@ namespace MigrationUtils.Dal.Models
 
         public bool UseBusinessDays { get; set; }
 
-        [Required] [StringLength(50)] public string Type { get; set; }
+        public string Type { get; set; }
 
         public int? ParentEventScenarioId { get; set; }
 
         public bool AlwaysUseDueDate { get; set; }
-
-        public virtual EventScenario EventScenario { get; set; }
-
-        public virtual SubEventScenario SubEventScenario { get; set; }
-
-        public virtual SubEventScenario SubEventScenario1 { get; set; }
     }
 }
