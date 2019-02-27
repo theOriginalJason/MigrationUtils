@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.329
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MigrationUtils.ExtractionConsole", "ExtrantionUtil.Console\MigrationUtils.ExtractionConsole.csproj", "{0606834F-22B1-44F6-8E35-C72C36EE2486}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MigrationUtils.ExtractionConsole", "MigrationUtils.ExtractionConsole\MigrationUtils.ExtractionConsole.csproj", "{0606834F-22B1-44F6-8E35-C72C36EE2486}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MigrationUtils.Dal", "MigrationUtils.Dal\MigrationUtils.Dal.csproj", "{BA44E9D1-0D5C-40FD-A205-300E74470957}"
 EndProject
