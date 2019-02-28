@@ -39,7 +39,7 @@ namespace MigrationUtils.Bll.Services
                         report.AppendLine("     Unable to read KCR file skipping comparison");
                         continue;
                     }
-                    ComparisonTest.Compare(tweModels,kcrModels);
+                    ComparisonTest.Compare(tweModels,kcrModels,listType);
                     report.AppendLine("     No differences found");
                 }
                 catch (Exception e)

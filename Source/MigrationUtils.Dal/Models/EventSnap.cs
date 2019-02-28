@@ -20,7 +20,6 @@ namespace MigrationUtils.Dal.Models
         public decimal NonRefundableFunds { get; set; }
         public decimal? StudyMegawatts { get; set; }
         public DateTimeOffset? CompletedDate { get; set; }
-        public int GirStudyWindowId { get; set; }
         public int? TransmissionEntityEventTypeId { get; set; }
         public bool IsDeleted { get; set; }
         public bool IsTemplate { get; set; }
