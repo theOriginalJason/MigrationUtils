@@ -259,3 +259,4 @@ __pycache__/
 *.pyc
 
 Releases/ExtractionConsole/
+Releases/ComparisonConsole/
