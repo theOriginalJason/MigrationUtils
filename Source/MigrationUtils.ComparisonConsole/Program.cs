@@ -28,7 +28,6 @@ namespace MigrationUtils.ComparisonConsole
             {
                 Console.WriteLine(e);
             }
-            Console.ReadLine();
         }
     }
 }

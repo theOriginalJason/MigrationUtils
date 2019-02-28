@@ -24,7 +24,7 @@ namespace MigrationUtils.ExtractionConsole
                         foreach (var key in models.Keys)
                         {
                             Console.WriteLine($"    Processing {key.Name} models...");
-                            var foundModels =RepositoryUtil.Get(models[key], connection);
+                            var foundModels =RepositoryUtil.Get(models[key].GetCommand, connection);
                             JsonFileUtil.WriteToFile(basePath, key.Name,foundModels);
                         }
                     }
@@ -39,7 +39,6 @@ namespace MigrationUtils.ExtractionConsole
             {
                 Console.WriteLine(e);
             }
-            Console.ReadLine();
         }
     }
 }
